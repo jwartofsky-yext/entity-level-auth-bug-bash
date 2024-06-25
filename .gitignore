@@ -2,6 +2,7 @@ node_modules/
 sites-rendered-output/
 localData/
 dist/
+.idea
 .yext
 .artifact-output
 sites-config/features.json
