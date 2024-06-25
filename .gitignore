@@ -4,6 +4,7 @@ localData/
 dist/
 .idea
 .yext
+.yextrc
 .artifact-output
 sites-config/features.json
 *.local
