@@ -9,7 +9,7 @@ import {
   GetHeadConfig,
   GetPath,
   GetRedirects,
-  //GetAuthScope,
+  GetAuthScope,
   HeadConfig,
   Template,
   TemplateConfig,
@@ -18,7 +18,7 @@ import {
 } from "@yext/pages";
 import * as React from "react";
 import "../index.css";
-import { Address, /* LexicalRichText */ } from "@yext/pages-components";
+import { Address, LexicalRichText } from "@yext/pages-components";
 
 /**
  * Required when Knowledge Graph Stream is used for a template.
@@ -90,13 +90,13 @@ const EntityPage: Template<TemplateRenderProps> = ({
   path,
   document,
 }) => {
-  const { name, address } = document;
+  const { name, address, c_secureRichTextV2 } = document;
 
   return (
     <>
       <h1>{name}</h1>
       <Address address={address}></Address>
-      { /* <LexicalRichText serializedAST={JSON.stringify(c_testSecureRichTextField.json)} /> */}
+      <LexicalRichText serializedAST={JSON.stringify(c_secureRichTextV2.json)} />
     </>
   );
 };
