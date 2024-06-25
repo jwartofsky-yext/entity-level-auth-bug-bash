@@ -10,10 +10,8 @@ import {
   HeadConfig,
   TransformProps,
   TemplateConfig,
-  TemplateProps,
   TemplateRenderProps,
 } from "@yext/pages";
-import Favicon from "../public/yext-favicon.ico";
 
 /**
  * Not required for static templates, but will contain the stream configuration for
